@@ -8,19 +8,39 @@
 
     <style type="text/css">
 
-        div{
-            font-size: 16px;
+        p{
+            font-size: 40px;
+            font-family: "Georgia";
+
         }
+        
         
         .texto{
             font-size: 1em;
 
         }
 
+        .negrito{
+            font-weight: bold;
+        }
+
+        .estilo{
+            /*font-style: italic;*/
+            font-style: oblique;
+        }
+
+        .texto-padrao{
+            font: bold 40px  "Palatino Linotype", 
+            "Book Antiqua", Palatino, serif;;
 
 
+        }
 
-
+        .formatacao{
+           /* text-decoration: underline;
+            text-decoration: overline;*/
+            text-decoration: line-through;
+        }
 
     </style>
 </head>
@@ -28,7 +48,7 @@
 
     <div>
         <p class="texto">
-            Suspendisse potenti. Nulla rutrum dignissim ex, at suscipit orci
+            Suspendisse potenti. Nulla <span class="formatacao">dignissim</span>  ex, at suscipit orci
             pellentesque sit amet. Ut ac eros ac quam consectetur sagittis 
             nec sit amet sem. Phasellus nec turpis pretium, interdum ex a, 
             tristique risus. Vestibulum ante ipsum primis in faucibus orci 
@@ -36,9 +56,13 @@
             Pellentesque dui ante,sagittis vel congue quis, congue et augue.
         </p>
 
-        <p>Conteúdo 1 </p>
+        <p class="negrito">Conteúdo 1 </p>
 
         <p>Conteúdo 2</p>
+
+        <p class="estilo">Conteúdo 3</p>
+
+        <p class="texto-padrao">Conteúdo 4</p>
 
  
 </div>
